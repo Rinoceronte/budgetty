@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class DisplayPurchases extends Component {
   render() {
+    console.log(this.props)
     let { purchases } = this.props;
     if (!purchases) purchases = [{ id: 1000, description: 'Ship', price: 1, category: 'Other' }]
     return (
